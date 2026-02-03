@@ -1,0 +1,184 @@
+---
+import { Store, Palette, LayoutDashboard, BarChart3, Utensils, Tag, Sparkles, Scissors, Fingerprint, Cloud, Lock, Database } from 'lucide-react';
+---
+
+<section id="features" class="py-20 relative">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <!-- Header -->
+    <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Todo lo que necesitas</h2>
+        <p class="text-slate-400">Tecnología potente para operar tu negocio.</p>
+    </div>
+
+    <!-- MAIN FEATURES (Bento Grid) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+      
+      <!-- Card 1: Gigante - Web de Pedidos -->
+      <div class="md:col-span-2 relative group overflow-hidden bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)] transition-all duration-500">
+        <div class="absolute top-0 right-0 p-10 opacity-10 group-hover:opacity-20 transition-opacity">
+          <Store className="w-64 h-64 text-cyan-500" />
+        </div>
+        <div class="relative z-10 h-full flex flex-col justify-end min-h-[300px]">
+          <div class="w-16 h-16 bg-cyan-950/50 rounded-2xl flex items-center justify-center border border-cyan-500/30 mb-6 group-hover:scale-110 transition-transform duration-500">
+            <Store className="w-8 h-8 text-cyan-400 shadow-cyan-500/50 drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]" />
+          </div>
+          <h3 class="text-3xl font-bold text-white mb-3">Tu Web de Pedidos 24/7</h3>
+          <p class="text-slate-400 text-lg max-w-md">
+            Un enlace propio <span class="text-cyan-300 font-mono bg-cyan-950/30 px-2 py-0.5 rounded">nexo.app/tumarca</span> donde tus clientes compran solos. Sin comisiones por venta.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2: Personalización -->
+      <div class="relative group bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(236,72,153,0.1)] transition-all duration-500">
+        <div class="w-14 h-14 bg-pink-950/50 rounded-2xl flex items-center justify-center border border-pink-500/30 mb-6 group-hover:scale-110 transition-transform duration-500">
+          <Palette className="w-7 h-7 text-pink-400" />
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">Tu Marca Primero</h3>
+        <p class="text-slate-400">
+          Tus colores, tu logo. Personaliza el diseño de tu tienda en cualquier momento para que siempre refleje tu marca.
+        </p>
+      </div>
+
+      <!-- Card 3: Panel de Control -->
+      <div class="md:col-span-1 relative group bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] transition-all duration-500">
+        <div class="w-14 h-14 bg-purple-950/50 rounded-2xl flex items-center justify-center border border-purple-500/30 mb-6 group-hover:scale-110 transition-transform duration-500">
+          <LayoutDashboard className="w-7 h-7 text-purple-400" />
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">Panel de Control</h3>
+        <p class="text-slate-400">
+          Recibe pedidos, cambia estados y organiza tu día desde una sola pantalla.
+        </p>
+      </div>
+
+      <!-- Card 4: Reportes Inteligentes -->
+      <div class="md:col-span-2 relative group bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-500 flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-grow order-2 md:order-1">
+            <h3 class="text-2xl font-bold text-white mb-2">Reportes Inteligentes</h3>
+            <p class="text-slate-400 text-lg leading-relaxed">
+              Toma decisiones con datos, no con intuición. Conoce tus productos estrella, horarios pico y retención de clientes al instante.
+            </p>
+        </div>
+        <div class="order-1 md:order-2 w-20 h-20 bg-emerald-950/50 rounded-2xl flex items-center justify-center border border-emerald-500/30 group-hover:scale-110 transition-transform duration-500 flex-shrink-0">
+          <BarChart3 className="w-10 h-10 text-emerald-400" />
+        </div>
+      </div>
+      
+      <!-- NOTE: Card 4 (Servicios Combinados) is replaced by the Verticals Section below -->
+    </div>
+
+
+    <!-- VERTICALS SECTION (New Replacement for Card 4) -->
+    <div class="mb-8">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-4xl font-bold text-white mb-4">Diseñado para tu giro</h2>
+            <p class="text-slate-400">La plataforma se adapta a la forma en que vendes.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Card 1: Gastronomía -->
+            <div class="group bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-orange-500/50 hover:shadow-[0_0_30px_rgba(249,115,22,0.1)] transition-all duration-500 flex flex-col items-start gap-4">
+                <div class="w-14 h-14 bg-orange-950/50 rounded-2xl flex items-center justify-center border border-orange-500/30 group-hover:scale-110 transition-transform duration-500">
+                <Utensils className="w-7 h-7 text-orange-400" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Gastronomía</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                    Olvídate de las notas. El cliente elige sabor, relleno y dedicatoria en la web. La comanda llega lista a cocina.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Retail & Moda -->
+            <div class="group bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(236,72,153,0.1)] transition-all duration-500 flex flex-col items-start gap-4">
+                <div class="w-14 h-14 bg-pink-950/50 rounded-2xl flex items-center justify-center border border-pink-500/30 group-hover:scale-110 transition-transform duration-500">
+                <Tag className="w-7 h-7 text-pink-400" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Retail & Moda</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                    Control total de variantes: Tallas, Colores y Modelos. Si se vende la última 'Medium' en el local, desaparece de la web al instante.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Beauty & Productos -->
+            <div class="group bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)] transition-all duration-500 flex flex-col items-start gap-4">
+                <div class="w-14 h-14 bg-cyan-950/50 rounded-2xl flex items-center justify-center border border-cyan-500/30 group-hover:scale-110 transition-transform duration-500">
+                <Sparkles className="w-7 h-7 text-cyan-400" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Beauty & Productos</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                    Ventas rápidas de mostrador. Arma carritos al vuelo, aplica descuentos y mantén tu stock de productos siempre cuadrado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4: Servicios Híbridos -->
+             <div class="group bg-slate-900/50 border border-white/5 rounded-3xl p-8 hover:border-blue-500/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)] transition-all duration-500 flex flex-col items-start gap-4">
+                <div class="w-14 h-14 bg-blue-950/50 rounded-2xl flex items-center justify-center border border-blue-500/30 group-hover:scale-110 transition-transform duration-500">
+                <Scissors className="w-7 h-7 text-blue-400" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Servicios Híbridos</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                    El único que entiende tu mix. Cobra el Corte de Cabello + la Cera en el mismo ticket. Mano de obra y productos en una sola cuenta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Security Trust Block -->
+    <div class="w-full mt-20 bg-slate-900/30 border border-white/5 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+        <!-- Background Glow -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 -z-10"></div>
+        
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-12">
+            <div class="max-w-xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Seguridad Enterprise, Simplificada</h3>
+                <p class="text-slate-300 leading-relaxed">
+                    No te preocupes por servidores, hackers o actualizaciones. Tu tienda vive en la infraestructura de <strong class="text-white">Google Cloud</strong>, la misma que usan las empresas más grandes del mundo. Nosotros nos encargamos de la seguridad, tú encárgate de crecer.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Item 1: Autenticación -->
+            <div class="flex flex-col items-center text-center gap-3 group">
+                <div class="w-14 h-14 bg-blue-900/20 rounded-2xl flex items-center justify-center border border-blue-500/20 group-hover:border-blue-500/50 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all duration-300">
+                    <Fingerprint className="w-7 h-7 text-blue-400" />
+                </div>
+                <span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Acceso con Google</span>
+            </div>
+
+            <!-- Item 2: Infraestructura -->
+            <div class="flex flex-col items-center text-center gap-3 group">
+                <div class="w-14 h-14 bg-cyan-900/20 rounded-2xl flex items-center justify-center border border-cyan-500/20 group-hover:border-cyan-500/50 group-hover:shadow-[0_0_20px_rgba(6,182,212,0.2)] transition-all duration-300">
+                    <Cloud className="w-7 h-7 text-cyan-400" />
+                </div>
+                <span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Google Cloud Platform</span>
+            </div>
+
+            <!-- Item 3: Protección -->
+            <div class="flex flex-col items-center text-center gap-3 group">
+                <div class="w-14 h-14 bg-teal-900/20 rounded-2xl flex items-center justify-center border border-teal-500/20 group-hover:border-teal-500/50 group-hover:shadow-[0_0_20px_rgba(20,184,166,0.2)] transition-all duration-300">
+                    <Lock className="w-7 h-7 text-teal-400" />
+                </div>
+                <span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Encriptación SSL</span>
+            </div>
+
+            <!-- Item 4: Respaldo -->
+            <div class="flex flex-col items-center text-center gap-3 group">
+                <div class="w-14 h-14 bg-violet-900/20 rounded-2xl flex items-center justify-center border border-violet-500/20 group-hover:border-violet-500/50 group-hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] transition-all duration-300">
+                    <Database className="w-7 h-7 text-violet-400" />
+                </div>
+                <span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Backups Automáticos</span>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,123 @@
+---
+import { MessageCircle, Instagram, Send, Building2, User, Phone, Briefcase } from 'lucide-react';
+---
+
+<section id="contact" class="py-20 bg-slate-900 border-t border-white/5">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-4">Hablemos de tu Negocio</h2>
+            <p class="text-slate-400">Déjanos tus datos y diseñemos la solución perfecta para ti.</p>
+        </div>
+
+        <div class="max-w-2xl mx-auto">
+            
+            <!-- Complete B2B Form -->
+            <form id="contactForm" class="space-y-4">
+                
+                <!-- Nombre -->
+                <div class="relative">
+                    <label for="name" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Tu Nombre</label>
+                    <div class="relative">
+                        <User className="absolute left-4 top-3.5 w-5 h-5 text-slate-500" />
+                        <input type="text" id="name" name="name" required class="w-full bg-slate-900 border border-slate-800 rounded-xl pl-12 pr-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all placeholder:text-slate-600" placeholder="Ej. Juan Pérez" />
+                    </div>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="relative">
+                    <label for="phone" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">WhatsApp</label>
+                    <div class="relative">
+                        <Phone className="absolute left-4 top-3.5 w-5 h-5 text-slate-500" />
+                        <input type="tel" id="phone" name="phone" required class="w-full bg-slate-900 border border-slate-800 rounded-xl pl-12 pr-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all placeholder:text-slate-600" placeholder="+52 33..." />
+                    </div>
+                </div>
+
+                <!-- Nombre del Negocio -->
+                <div class="relative">
+                    <label for="business" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Nombre del Negocio</label>
+                    <div class="relative">
+                        <Building2 className="absolute left-4 top-3.5 w-5 h-5 text-slate-500" />
+                        <input type="text" id="business" name="business" required class="w-full bg-slate-900 border border-slate-800 rounded-xl pl-12 pr-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all placeholder:text-slate-600" placeholder="Ej. Tacos El Paisa" />
+                    </div>
+                </div>
+
+                <!-- Giro / Sector -->
+                <div class="relative">
+                    <label for="sector" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Giro</label>
+                    <div class="relative">
+                        <Briefcase className="absolute left-4 top-3.5 w-5 h-5 text-slate-500" />
+                        <select id="sector" name="sector" class="w-full bg-slate-900 border border-slate-800 rounded-xl pl-12 pr-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all appearance-none cursor-pointer">
+                            <option value="Gastronomía">Gastronomía / Restaurante</option>
+                            <option value="Retail">Retail / Tienda de Ropa</option>
+                            <option value="Belleza">Belleza / Barbería</option>
+                            <option value="Servicios">Servicios Profesionales</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <div class="absolute right-4 top-4 pointer-events-none">
+                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full mt-2 bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-4 rounded-xl transition-all shadow-[0_0_20px_rgba(37,99,235,0.2)] hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2">
+                    <Send className="w-5 h-5" />
+                    Solicitar Agenda
+                </button>
+            </form>
+
+            <!-- Alternative Contact (Restored Cards) -->
+            <div class="mt-16 pt-10 border-t border-white/5">
+                <p class="text-center text-slate-500 mb-8 text-sm uppercase tracking-wider font-semibold">O contáctanos directo</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="https://wa.me/523320430245?text=Hola,%20tengo%20una%20duda%20sobre%20DALE" target="_blank" class="group flex items-center gap-4 p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-green-500/50 hover:bg-green-500/5 transition-all">
+                        <div class="w-10 h-10 bg-green-500/10 rounded-full flex items-center justify-center group-hover:bg-green-500/20 transition-colors">
+                            <MessageCircle className="w-5 h-5 text-green-500" />
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-base font-semibold text-white">WhatsApp</h3>
+                            <p class="text-slate-400 text-xs">Respuesta inmediata</p>
+                        </div>
+                        <Send className="w-4 h-4 text-slate-500 group-hover:text-green-500 group-hover:translate-x-1 transition-all" />
+                    </a>
+
+                    <a href="https://www.instagram.com/dml.6m?igsh=MTI3emRlcjkybjd6Mw%3D%3D&utm_source=qr" target="_blank" class="group flex items-center gap-4 p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-pink-500/50 hover:bg-pink-500/5 transition-all">
+                        <div class="w-10 h-10 bg-pink-500/10 rounded-full flex items-center justify-center group-hover:bg-pink-500/20 transition-colors">
+                            <Instagram className="w-5 h-5 text-pink-500" />
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-base font-semibold text-white">Instagram</h3>
+                            <p class="text-slate-400 text-xs text-ellipsis overflow-hidden">@dml.6m</p>
+                        </div>
+                        <Send className="w-4 h-4 text-slate-500 group-hover:text-pink-500 group-hover:translate-x-1 transition-all" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer class="mt-20 pt-8 border-t border-slate-900 text-center text-slate-600 text-sm">
+            <p>&copy; 2026 LeoDev. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</section>
+
+<script>
+    const form = document.getElementById('contactForm') as HTMLFormElement;
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = (document.getElementById('name') as HTMLInputElement).value;
+        const phone = (document.getElementById('phone') as HTMLInputElement).value;
+        const business = (document.getElementById('business') as HTMLInputElement).value;
+        const sector = (document.getElementById('sector') as HTMLSelectElement).value;
+
+        // Using placeholder for owner email
+        const ownerEmail = "cambiar_este_correo@ejemplo.com"; 
+        
+        const subject = `Nuevo Lead DALE: ${business} (${sector})`;
+        const body = `Nombre: ${name}%0AWhatsApp: ${phone}%0ANegocio: ${business}%0AGiro: ${sector}`;
+        
+        const mailtoLink = `mailto:${ownerEmail}?subject=${subject}&body=${body}`;
+        
+        window.location.href = mailtoLink;
+    });
+</script>

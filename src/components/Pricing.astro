@@ -1,0 +1,143 @@
+---
+import { Zap, TrendingUp, Crown, Check, Store, Mail, Power, ClipboardList, Receipt, Package, BarChart3, Shield, AlertTriangle, Users, Rocket, Contact, Kanban, Gem } from 'lucide-react';
+---
+
+<section id="pricing" class="py-20 relative bg-slate-900/20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Planes para cada etapa</h2>
+            <p class="text-slate-400">Escala tu negocio sin romper la alcancía.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            
+            <!-- Plan INICIO -->
+            <div class="bg-slate-950/50 border border-slate-800 rounded-3xl p-8 hover:border-slate-600 transition-colors relative flex flex-col">
+                <div class="mb-6">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-4">
+                        <Zap className="w-6 h-6 text-slate-200" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">INICIO</h3>
+                    <p class="text-slate-500 text-sm mt-1">Profesionaliza tu venta.</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-bold text-white tracking-tight">$299</span>
+                    <span class="text-slate-500">/mes</span>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                     <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Store className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                        <span>Tu Tienda Online <span class="text-slate-500 block text-xs">(Personalizada)</span></span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Mail className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                        <span>Correos Automáticos <span class="text-slate-500 block text-xs">(Confirma pedidos al instante)</span></span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Power className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                        <span>Control Tienda (On/Off) <span class="text-slate-500 block text-xs">(Abre o cierra con un clic)</span></span>
+                    </li>
+                     <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <ClipboardList className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                        <span>Tablero de Operaciones <span class="text-slate-500 block text-xs">(Qué preparar hoy)</span></span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Receipt className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                        <span>POS y Tickets <span class="text-slate-500 block text-xs">(Venta física)</span></span>
+                    </li>
+                    <li class="flex items-center gap-3 text-white font-medium text-sm pt-2 border-t border-slate-800/50">
+                        <Package className="w-5 h-5 text-slate-400 shrink-0" />
+                        <span>25 Productos / 1 Usuario</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/523320430245?text=Hola,%20me%20interesa%20empezar%20con%20el%20Plan%20INICIO" target="_blank" class="block w-full py-3 px-4 bg-slate-800 hover:bg-slate-700 text-white text-center rounded-xl font-medium transition-colors">
+                    Elegir Inicio
+                </a>
+            </div>
+
+            <!-- Plan CRECIMIENTO -->
+            <div class="bg-gradient-to-b from-blue-900/10 to-slate-950/50 border border-blue-500/30 rounded-3xl p-8 hover:border-blue-400/50 transition-colors relative flex flex-col transform md:-translate-y-4 shadow-[0_0_40px_rgba(59,130,246,0.1)]">
+                <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-2xl">
+                    RECOMENDADO
+                </div>
+                <div class="mb-6">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 border border-blue-500/30">
+                        <TrendingUp className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">CRECIMIENTO</h3>
+                    <p class="text-blue-200/60 text-sm mt-1">Controla tu dinero.</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-5xl font-bold text-white tracking-tight">$499</span>
+                    <span class="text-slate-500">/mes</span>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Check className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                        <span class="font-medium text-white">Todo lo del Plan Inicio</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <BarChart3 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                        <span>Dashboard Financiero <span class="text-slate-400 block text-xs">(Reporte de Ventas Reales)</span></span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Shield className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                        <span>Inventario Blindado <span class="text-slate-400 block text-xs">(Kardex de entradas/salidas)</span></span>
+                    </li>
+                     <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <AlertTriangle className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                        <span>Alertas de Stock Bajo <span class="text-slate-400 block text-xs">(Nunca te quedes en ceros)</span></span>
+                    </li>
+                     <li class="flex items-center gap-3 text-white font-medium text-sm pt-2 border-t border-blue-500/20">
+                        <Package className="w-5 h-5 text-blue-400 shrink-0" />
+                        <span>100 Productos / 3 Usuarios</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/523320430245?text=Hola,%20me%20interesa%20el%20Plan%20CRECIMIENTO" target="_blank" class="block w-full py-3 px-4 bg-blue-600 hover:bg-blue-500 text-white text-center rounded-xl font-medium transition-colors shadow-lg shadow-blue-500/20">
+                    Elegir Crecimiento
+                </a>
+            </div>
+
+            <!-- Plan DOMINIO TOTAL -->
+            <div class="bg-slate-950/50 border border-amber-500/20 rounded-3xl p-8 hover:border-amber-500/40 transition-colors relative flex flex-col">
+                <div class="mb-6">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4 border border-amber-500/20">
+                        <Crown className="w-6 h-6 text-amber-500" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-amber-500">DOMINIO TOTAL</h3>
+                    <p class="text-slate-500 text-sm mt-1">Escala sin límites.</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-bold text-white tracking-tight">$699</span>
+                    <span class="text-slate-500">/mes</span>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Check className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+                        <span class="font-medium text-white">Todo lo del Plan Crecimiento</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Rocket className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+                        <span>Usuarios y Productos ILIMITADOS</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Contact className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+                        <span>CRM de Clientes <span class="text-slate-500 block text-xs">(Tu base de datos propia)</span></span>
+                    </li>
+                     <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Kanban className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+                        <span>Tablero Kanban <span class="text-slate-500 block text-xs">(Flujo visual de pedidos)</span></span>
+                    </li>
+                     <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <Gem className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+                        <span>Soporte Prioritario</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/523320430245?text=Hola,%20quiero%20el%20Plan%20DOMINIO%20TOTAL" target="_blank" class="block w-full py-3 px-4 bg-slate-800 hover:bg-slate-700 text-white text-center rounded-xl font-medium transition-colors border border-amber-500/20 hover:border-amber-500/50">
+                    Quiero Todo Ilimitado
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>

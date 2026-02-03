@@ -1,0 +1,45 @@
+---
+import { Bell, ChevronRight } from 'lucide-react';
+---
+
+<section class="py-20 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+    
+    <!-- Background Elements -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-r from-blue-500/10 to-cyan-500/10 blur-[100px] -z-10 rounded-full"></div>
+
+    <!-- Notification Card Simulation -->
+    <div class="relative w-full max-w-md mx-auto">
+      <div class="absolute inset-x-4 top-4 bottom-[-10px] bg-slate-800/50 rounded-2xl scale-95 opacity-50 blur-sm"></div>
+      
+      <div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl shadow-2xl p-4 flex items-center gap-4 animate-in slide-in-from-bottom-8 duration-700 fade-in">
+        <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0 animate-pulse">
+            <Bell className="w-6 h-6 text-green-400" />
+        </div>
+        
+        <div class="flex-grow">
+            <h4 class="text-white font-semibold flex items-center gap-2">
+                Nuevo Pedido
+                <span class="text-[10px] uppercase bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full tracking-wide">Pagado</span>
+            </h4>
+            <p class="text-slate-400 text-sm">Yummi Bakery • $450.00 MXN</p>
+        </div>
+
+        <div class="text-slate-500">
+            <span class="text-xs">Ahora</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Proof Text -->
+    <div class="mt-12 text-center max-w-2xl">
+        <p class="text-xl md:text-2xl font-medium text-white mb-4">
+            "Negocios reales como <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 font-bold">Yummi Bakery</span> ya automatizaron sus ventas con DALE."
+        </p>
+        <a href="https://wa.me/523320430245?text=Hola,%20quiero%20automatizar%20mi%20negocio%20como%20Yummi%20Bakery" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors group">
+            Quiero automatizar mi negocio también <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+        </a>
+    </div>
+
+  </div>
+</section>
